@@ -1,24 +1,22 @@
-const about = document.querySelector("#about");
-const experience = document.querySelector("#experience");
+const whoami = document.querySelector("#whoami");
 const qualification = document.querySelector("#qualification");
-const skillset = document.querySelector("#skillset");
+const projects = document.querySelector("#projects");
 
-const aboutContent = document.querySelector("#about-content");
-const experienceContent = document.querySelector("#experience-content");
+const whoamiContent = document.querySelector("#whoami-content");
 const qualificationContent = document.querySelector("#qualification-content");
-const skillsetContent = document.querySelector("#skillset-content");
+const projectsContent = document.querySelector("#projects-content");
 
-// About Section
-about.addEventListener("click", () => {
-  const aboutBox = new WinBox({
-    title: "ABOUT 📜",
+// Whoami Section
+whoami.addEventListener("click", () => {
+  const whoamiBox = new WinBox({
+    title: "WHOAMI 👨‍💻",
     width: "400px",
     height: "400px",
     top: 50,
     right: 50,
     bottom: 50,
     left: 50,
-    mount: aboutContent,
+    mount: whoamiContent,
     onfocus: function () {
       this.setBackground("#00aa00");
     },
@@ -27,27 +25,6 @@ about.addEventListener("click", () => {
     },
   });
 });
-
-// Experience Section
-experience.addEventListener("click", () => {
-  const experienceBox = new WinBox({
-    title: "EXPERIENCE 💼",
-    width: "400px",
-    height: "400px",
-    top: 80,
-    right: 50,
-    bottom: 50,
-    left: 50,
-    mount: experienceContent,
-    onfocus: function () {
-      this.setBackground("#00aa00");
-    },
-    onblur: function () {
-      this.setBackground("#777");
-    },
-  });
-});
-
 
 // Qualification Section
 qualification.addEventListener("click", () => {
@@ -69,17 +46,17 @@ qualification.addEventListener("click", () => {
   });
 });
 
-// Skillset Section
-skillset.addEventListener("click", () => {
-  const skillsetBox = new WinBox({
-    title: "SKILLSET 🛠",
+// Projects Section
+projects.addEventListener("click", () => {
+  const projectBox = new WinBox({
+    title: "PROJECTS 🏗️",
     width: "400px",
     height: "400px",
     top: 150,
     right: 50,
     bottom: 50,
     left: 50,
-    mount: skillsetContent,
+    mount: projectsContent,
     onfocus: function () {
       this.setBackground("#00aa00");
     },
